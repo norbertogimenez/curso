@@ -1,0 +1,122 @@
+package aulas.oo.part01.paradigma.exemplo001;
+
+public class ExemploMetodos {
+    public static void main(String[] args) {
+        Pessoa pessoa = new Pessoa();
+
+        System.out.println(pessoa.falarMeuProprioNome());
+        // Olá, meu nome é Marco
+
+        System.out.println(pessoa.andar());
+    }
+}
+
+---------------------------------------------------
+
+package aulas.oo.part01.paradigma.exemplo001;
+
+public class ExemploInstanciaObjeto {
+
+    public static void main(String[] args) {
+
+        Pessoa pessoa = new Pessoa();
+
+        System.out.println(pessoa.getNome());
+        // Marco
+
+    }
+
+}
+---------------------------------------------------
+package aulas.oo.part01.paradigma.exemplo001;
+
+public class Pessoa {
+
+    private String nome = "Luis";
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String falarMeuProprioNome(){
+        return "Olá, meu nome é " + getNome();
+    }
+
+    public String andar() {
+        return "Andando...";
+    }
+}
+
+=====================================================================================
+=======================================================================02
+Construtores
+
+package aulas.oo.part02.construtores.exemplo001;
+
+public class ExemploInstanciaObjeto {
+
+    public static void main(String[] args) {
+
+        Pessoa pessoa = new Pessoa();
+
+        System.out.println(pessoa.getNome());
+
+    }
+
+}
+
+--------------------------------------------------------------
+
+package aulas.oo.part02.construtores.exemplo001;
+
+public class Pessoa {
+
+    private String nome;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
+
+======================================================================03
+
+package aulas.oo.part02.construtores.exemplo002;
+
+public class ExemploInstanciaObjeto {
+
+    public static void main(String[] args) {
+
+        Pessoa pessoa = new Pessoa();
+
+        System.out.println(pessoa.getNome());
+
+    }
+
+}
+-----------------------------------------------------------
+
+
+package aulas.oo.part02.construtores.exemplo002;
+
+public class Pessoa {
+
+    private String nome;
+
+    public Pessoa() {
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
+
+=============================================================04
+
